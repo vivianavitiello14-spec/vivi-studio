@@ -1,0 +1,32 @@
+VIVI STUDIO — sito web
+=====================
+
+CONTENUTO
+- index.html ........ tutto il sito (HTML, CSS e JavaScript in un unico file, commentato per sezioni)
+- favicon.svg ....... icona del sito
+- assets/img/ ....... fotografie, grafiche e screenshot ottimizzati
+
+PUBBLICARE ONLINE (gratis, 2 minuti)
+1. Vai su https://app.netlify.com/drop
+2. Trascina l'intera cartella "vivi-studio"
+3. Il sito è online. Da Netlify puoi collegare un dominio (es. vivistudio.it).
+In alternativa funziona su qualsiasi hosting: carica i file così come sono.
+
+ATTIVARE IL FORM DI CONTATTO
+Il form usa FormSubmit (gratuito, nessun server necessario) e invia le richieste a
+vitielloviviana1@gmail.com.
+1. Pubblica il sito.
+2. Compila e invia il form una prima volta.
+3. Riceverai un'email da FormSubmit: clicca "Activate Form".
+Da quel momento ogni richiesta arriva nella tua casella.
+Per cambiare indirizzo: in index.html cerca "CONFIG" (verso la fine) e sostituisci l'email nelle due righe.
+Se l'invio automatico non riesce, il sito propone al visitatore di inviare la richiesta dal proprio programma di posta.
+
+MODIFICHE RAPIDE
+- Testi: cerca il testo in index.html e sostituiscilo.
+- Colori e font: in index.html, sezione "1. DESIGN TOKENS" all'inizio dello stile.
+- Immagini: sostituisci i file in assets/img mantenendo lo stesso nome.
+
+DA COMPLETARE PRIMA DELLA PUBBLICAZIONE
+- Conferma che Mary Trainer e ARU Eyewear siano d'accordo a comparire con il loro nome.
+- Se hai P.IVA o sede legale, aggiungile nel footer (obbligatorie per attività in Italia) e collega una privacy policy.

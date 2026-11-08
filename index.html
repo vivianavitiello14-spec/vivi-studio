@@ -1,0 +1,1052 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>VIVI STUDIO — Comunicazione, Marketing e Strategia Digitale</title>
+<meta name="description" content="VIVI STUDIO è uno studio di comunicazione, marketing e consulenza digitale. Social media, advertising, brand identity, siti web, video e AI: pacchetti su misura, senza contratti vincolanti.">
+<meta name="keywords" content="agenzia di comunicazione, social media manager, digital marketing, Meta Ads, Google Ads, brand identity, web design, videomaker, VIVI STUDIO">
+<meta name="author" content="VIVI STUDIO">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#F5F0EA">
+<!-- Open Graph / social -->
+<meta property="og:type" content="website">
+<meta property="og:locale" content="it_IT">
+<meta property="og:site_name" content="VIVI STUDIO">
+<meta property="og:title" content="VIVI STUDIO — Non basta esserci. Bisogna sapersi distinguere.">
+<meta property="og:description" content="Strategia, creatività e tecnologia per costruire brand riconoscibili e trasformare le idee in opportunità di crescita.">
+<meta property="og:image" content="assets/img/viviana-vitiello.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231F1A17'/%3E%3Cpath d='M17 18h7l8 21 8-21h7L35.5 47h-7z' fill='%23F5F0EA'/%3E%3Ccircle cx='47' cy='45' r='3' fill='%23B88A7B'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Manrope:wght@300;400;500;600&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "VIVI STUDIO",
+  "description": "Studio di comunicazione, marketing e strategia digitale.",
+  "email": "vitielloviviana1@gmail.com",
+  "telephone": "+393928130323",
+  "founder": { "@type": "Person", "name": "Viviana Vitiello" },
+  "areaServed": "IT",
+  "knowsAbout": ["Social Media Management","Digital Marketing","Meta Ads","Google Ads","Brand Identity","Web Design","Video","AI e automazioni"]
+}
+</script>
+<style>
+/* =========================================================
+   1. DESIGN TOKENS
+   ========================================================= */
+:root{
+  --ivory:#F5F0EA;
+  --paper:#FBF8F4;
+  --sand:#E9E0D5;
+  --taupe:#9A897C;
+  --muted:#6B5F57;
+  --ink:#1F1A17;
+  --espresso:#2B221E;
+  --rose:#B88A7B;
+  --rose-deep:#9C6F61;
+  --line:rgba(31,26,23,.12);
+  --line-light:rgba(245,240,234,.16);
+  --serif:"Cormorant Garamond", Georgia, "Times New Roman", serif;
+  --sans:"Manrope", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --wrap:1240px;
+  --pad:clamp(20px,5vw,56px);
+  --radius:22px;
+  --ease:cubic-bezier(.2,.7,.2,1);
+}
+
+/* =========================================================
+   2. BASE
+   ========================================================= */
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--ivory);color:var(--ink);font-family:var(--sans);font-size:16px;line-height:1.65;font-weight:400;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+button{font:inherit;color:inherit;cursor:pointer}
+:focus-visible{outline:2px solid var(--rose);outline-offset:3px;border-radius:4px}
+.wrap{max-width:var(--wrap);margin:0 auto;padding:0 var(--pad)}
+.skip{position:absolute;left:-999px;top:8px;background:var(--ink);color:var(--ivory);padding:10px 16px;border-radius:8px;z-index:100}
+.skip:focus{left:8px}
+.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+
+h1,h2,h3{font-family:var(--serif);font-weight:500;letter-spacing:-.01em;line-height:1.05;margin:0}
+h2{font-size:clamp(2.3rem,5vw,4rem)}
+h3{font-size:clamp(1.5rem,2.4vw,1.9rem)}
+em{font-style:italic;color:var(--rose-deep)}
+p{margin:0 0 1em}
+.eyebrow{display:inline-flex;align-items:center;gap:12px;font-size:.72rem;letter-spacing:.24em;text-transform:uppercase;font-weight:600;color:var(--muted)}
+.eyebrow::before{content:"";width:28px;height:1px;background:currentColor}
+.lead{font-size:clamp(1.05rem,1.4vw,1.2rem);color:var(--muted);max-width:56ch}
+section{position:relative}
+.section{padding:clamp(88px,12vw,160px) 0}
+.section-head{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:end;margin-bottom:clamp(48px,7vw,88px)}
+.section-head h2{margin-top:18px}
+
+/* Buttons */
+.btn{display:inline-flex;align-items:center;gap:12px;padding:16px 26px;border-radius:999px;border:1px solid var(--ink);font-size:.92rem;font-weight:500;letter-spacing:.01em;transition:background .4s var(--ease),color .4s var(--ease),transform .4s var(--ease),border-color .4s}
+.btn svg{width:16px;height:16px;transition:transform .4s var(--ease)}
+.btn:hover svg{transform:translateX(4px)}
+.btn-dark{background:var(--ink);color:var(--ivory)}
+.btn-dark:hover{background:var(--rose-deep);border-color:var(--rose-deep)}
+.btn-ghost{background:transparent}
+.btn-ghost:hover{background:var(--ink);color:var(--ivory)}
+.btn-light{background:var(--ivory);color:var(--ink);border-color:var(--ivory)}
+.btn-light:hover{background:var(--rose);border-color:var(--rose);color:var(--ink)}
+.link-line{position:relative;font-weight:500}
+.link-line::after{content:"";position:absolute;left:0;bottom:-3px;width:100%;height:1px;background:currentColor;transform-origin:right;transform:scaleX(1);transition:transform .5s var(--ease)}
+.link-line:hover::after{transform:scaleX(0)}
+
+/* Reveal animations */
+.reveal{opacity:0;transform:translateY(28px);transition:opacity 1s var(--ease),transform 1s var(--ease)}
+.reveal.in{opacity:1;transform:none}
+.reveal[data-delay="1"]{transition-delay:.1s}.reveal[data-delay="2"]{transition-delay:.2s}.reveal[data-delay="3"]{transition-delay:.3s}.reveal[data-delay="4"]{transition-delay:.4s}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .reveal{opacity:1;transform:none;transition:none}
+  *{animation:none!important;transition:none!important}
+}
+
+/* =========================================================
+   3. HEADER
+   ========================================================= */
+.header{position:fixed;inset:0 0 auto 0;z-index:50;transition:background .4s,box-shadow .4s,padding .4s}
+.header .wrap{display:flex;align-items:center;justify-content:space-between;height:84px;transition:height .4s}
+.header.scrolled{background:rgba(245,240,234,.88);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);box-shadow:0 1px 0 var(--line)}
+.header.scrolled .wrap{height:68px}
+.logo{display:flex;align-items:baseline;gap:8px;font-family:var(--serif);font-size:1.55rem;font-weight:600;letter-spacing:.14em}
+.logo span{font-family:var(--sans);font-size:.62rem;letter-spacing:.32em;font-weight:500;color:var(--muted)}
+.nav{display:flex;align-items:center;gap:34px}
+.nav ul{display:flex;gap:30px;list-style:none;margin:0;padding:0}
+.nav ul a{font-size:.88rem;position:relative;padding:4px 0}
+.nav ul a::after{content:"";position:absolute;left:0;bottom:0;height:1px;width:100%;background:var(--ink);transform:scaleX(0);transform-origin:left;transition:transform .45s var(--ease)}
+.nav ul a:hover::after,.nav ul a.active::after{transform:scaleX(1)}
+.nav .btn{padding:11px 20px;font-size:.84rem}
+.burger{display:none;width:46px;height:46px;border-radius:50%;border:1px solid var(--line);background:transparent;position:relative}
+.burger span{position:absolute;left:14px;right:14px;height:1.5px;background:var(--ink);transition:transform .4s var(--ease),opacity .3s}
+.burger span:nth-child(1){top:18px}.burger span:nth-child(2){top:26px}
+.menu-open .burger span:nth-child(1){transform:translateY(4px) rotate(45deg)}
+.menu-open .burger span:nth-child(2){transform:translateY(-4px) rotate(-45deg)}
+
+/* =========================================================
+   4. HERO
+   ========================================================= */
+.hero{min-height:100vh;min-height:100svh;padding:140px 0 70px;display:flex;align-items:center;overflow:hidden}
+.hero::before{content:"";position:absolute;width:62vw;height:62vw;max-width:900px;max-height:900px;right:-12vw;top:-18vw;border-radius:50%;background:radial-gradient(circle at 40% 40%,#EADBD0 0%,rgba(234,219,208,0) 68%);pointer-events:none}
+.hero-grid{display:grid;grid-template-columns:1.35fr .8fr;gap:clamp(40px,6vw,96px);align-items:center;position:relative}
+.hero h1{font-size:clamp(2.8rem,6vw,5.9rem);line-height:.96;margin:26px 0 30px;letter-spacing:-.025em}
+.hero h1 .line{display:block;overflow:hidden;padding-bottom:.06em}
+.hero h1 .line>span{display:inline-block;transform:translateY(105%);animation:rise 1.2s var(--ease) forwards}
+.hero h1 .line:nth-child(2)>span{animation-delay:.12s}
+.hero h1 .line:nth-child(3)>span{animation-delay:.24s}
+@keyframes rise{to{transform:none}}
+.hero .lead{margin-bottom:40px;opacity:0;animation:fade 1.2s .55s var(--ease) forwards}
+.hero-ctas{display:flex;flex-wrap:wrap;gap:14px;opacity:0;animation:fade 1.2s .7s var(--ease) forwards}
+@keyframes fade{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+.hero-meta{display:flex;flex-wrap:wrap;gap:10px 28px;margin-top:54px;padding-top:26px;border-top:1px solid var(--line);font-size:.82rem;color:var(--muted);opacity:0;animation:fade 1.2s .9s var(--ease) forwards}
+.hero-meta li{display:flex;align-items:center;gap:10px}
+.hero-meta li::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--rose)}
+.hero-meta{list-style:none;margin-left:0;padding-left:0}
+.hero-visual{position:relative;opacity:0;animation:fade 1.4s .35s var(--ease) forwards}
+.arch{position:relative;border-radius:999px 999px 26px 26px;overflow:hidden;aspect-ratio:4/5.2;background:var(--sand);box-shadow:0 40px 80px -40px rgba(43,34,30,.45)}
+.arch img{width:100%;height:100%;object-fit:cover;object-position:50% 20%;transform:scale(1.06);transition:transform 1.6s var(--ease)}
+.hero-visual:hover .arch img{transform:scale(1.02)}
+.badge-round{position:absolute;left:-46px;bottom:70px;width:128px;height:128px;border-radius:50%;background:var(--ink);color:var(--ivory);display:grid;place-items:center}
+.badge-round svg{position:absolute;inset:0;width:100%;height:100%;animation:spin 22s linear infinite}
+.badge-round text{font-family:var(--sans);font-size:9.6px;letter-spacing:3.2px;fill:var(--ivory);text-transform:uppercase}
+.badge-round b{font-family:var(--serif);font-size:2.2rem;font-weight:500;font-style:italic;color:var(--rose)}
+@keyframes spin{to{transform:rotate(360deg)}}
+.hero-caption{position:absolute;right:-14px;top:42px;background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:12px 16px;font-size:.78rem;line-height:1.35;box-shadow:0 20px 40px -24px rgba(43,34,30,.35)}
+.hero-caption strong{display:block;font-family:var(--serif);font-size:1.12rem;font-weight:600}
+.scroll-cue{position:absolute;left:50%;bottom:26px;transform:translateX(-50%);width:1px;height:54px;background:var(--line);overflow:hidden}
+.scroll-cue::after{content:"";position:absolute;left:0;top:-50%;width:1px;height:50%;background:var(--ink);animation:cue 2.2s var(--ease) infinite}
+@keyframes cue{to{top:110%}}
+
+/* Marquee */
+.marquee{border-block:1px solid var(--line);background:var(--paper);overflow:hidden;padding:22px 0}
+.marquee-track{display:flex;width:max-content;animation:marq 38s linear infinite}
+.marquee:hover .marquee-track{animation-play-state:paused}
+.marquee span{font-family:var(--serif);font-size:clamp(1.4rem,2.6vw,2.1rem);font-style:italic;padding:0 28px;white-space:nowrap;display:flex;align-items:center;gap:56px}
+.marquee span::after{content:"✦";font-style:normal;font-size:.8rem;color:var(--rose)}
+@keyframes marq{to{transform:translateX(-50%)}}
+
+/* =========================================================
+   5. CHI SIAMO
+   ========================================================= */
+.about-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:clamp(40px,7vw,110px);align-items:start}
+.about-photo{position:sticky;top:110px}
+.about-photo .frame{border-radius:var(--radius);overflow:hidden;aspect-ratio:4/5;background:var(--sand)}
+.about-photo img{width:100%;height:100%;object-fit:cover;object-position:50% 25%}
+.about-photo figcaption{display:flex;justify-content:space-between;margin-top:16px;font-size:.82rem;color:var(--muted)}
+.about-photo figcaption strong{color:var(--ink);font-weight:600}
+.about-text h2{margin:18px 0 32px}
+.about-text .big{font-family:var(--serif);font-size:clamp(1.5rem,2.4vw,2rem);line-height:1.3;margin-bottom:28px;color:var(--ink)}
+.about-text p{color:var(--muted)}
+.pillars{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--line);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;margin:44px 0}
+.pillar{background:var(--ivory);padding:26px 24px;transition:background .4s}
+.pillar:hover{background:var(--paper)}
+.pillar small{font-size:.72rem;letter-spacing:.2em;color:var(--rose-deep);font-weight:600}
+.pillar h3{font-size:1.45rem;margin:8px 0 6px}
+.pillar p{font-size:.9rem;margin:0}
+.niches{display:flex;flex-wrap:wrap;gap:10px;margin-top:14px;padding:0;list-style:none}
+.niches li{border:1px solid var(--line);border-radius:999px;padding:7px 16px;font-size:.84rem;background:var(--paper)}
+
+/* Metodo */
+.method{background:var(--paper);border-block:1px solid var(--line)}
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:0;counter-reset:s;list-style:none;margin:0;padding:0}
+.step{padding:34px 28px 10px;border-left:1px solid var(--line);position:relative}
+.step:first-child{border-left:0;padding-left:0}
+.step .n{font-family:var(--serif);font-size:3.4rem;line-height:1;color:var(--rose);font-style:italic}
+.step h3{font-size:1.5rem;margin:18px 0 10px}
+.step p{font-size:.92rem;color:var(--muted)}
+
+/* =========================================================
+   6. SERVIZI
+   ========================================================= */
+.services{list-style:none;margin:0;padding:0;border-top:1px solid var(--line)}
+.service{border-bottom:1px solid var(--line)}
+.service-btn{width:100%;display:grid;grid-template-columns:90px 1fr auto;align-items:center;gap:20px;padding:34px 0;background:none;border:0;text-align:left}
+.service-btn .num{font-size:.8rem;letter-spacing:.2em;color:var(--taupe);font-weight:600}
+.service-btn h3{font-size:clamp(1.7rem,3.6vw,3rem);transition:transform .6s var(--ease),color .4s}
+.service-btn:hover h3{transform:translateX(12px);color:var(--rose-deep)}
+.service-btn .plus{width:52px;height:52px;border-radius:50%;border:1px solid var(--line);position:relative;transition:background .4s,border-color .4s,transform .5s var(--ease)}
+.service-btn .plus::before,.service-btn .plus::after{content:"";position:absolute;left:50%;top:50%;width:16px;height:1.5px;background:var(--ink);transform:translate(-50%,-50%);transition:transform .5s var(--ease),background .4s}
+.service-btn .plus::after{transform:translate(-50%,-50%) rotate(90deg)}
+.service.open .plus{background:var(--ink);border-color:var(--ink);transform:rotate(180deg)}
+.service.open .plus::before,.service.open .plus::after{background:var(--ivory)}
+.service.open .plus::after{transform:translate(-50%,-50%) rotate(0)}
+.service-panel{display:grid;grid-template-rows:0fr;transition:grid-template-rows .7s var(--ease)}
+.service.open .service-panel{grid-template-rows:1fr}
+.service-panel>div{overflow:hidden}
+.service-body{display:grid;grid-template-columns:90px 1fr 1fr;gap:20px;padding:0 0 40px}
+.service-body p{color:var(--muted);grid-column:2;max-width:44ch}
+.service-body ul{grid-column:3;list-style:none;margin:0;padding:0;display:grid;gap:10px}
+.service-body li{display:flex;gap:12px;align-items:baseline;font-size:.96rem}
+.service-body li::before{content:"";flex:0 0 14px;height:1px;background:var(--rose);transform:translateY(-4px)}
+
+/* =========================================================
+   7. PACCHETTI
+   ========================================================= */
+.packages{background:var(--espresso);color:var(--ivory)}
+.packages .eyebrow,.packages .lead{color:#CBBDB2}
+.packages em{color:var(--rose)}
+.no-contract{display:flex;align-items:center;gap:18px;border:1px solid var(--line-light);border-radius:999px;padding:14px 24px 14px 14px;width:max-content;max-width:100%;margin-bottom:56px;font-size:.95rem}
+.no-contract .ic{flex:0 0 40px;height:40px;border-radius:50%;background:var(--rose);color:var(--ink);display:grid;place-items:center}
+.no-contract .ic svg{width:18px;height:18px}
+.no-contract strong{font-weight:600}
+.plans{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.plan{border:1px solid var(--line-light);border-radius:var(--radius);padding:36px 32px;display:flex;flex-direction:column;transition:transform .6s var(--ease),background .4s,border-color .4s}
+.plan:hover{transform:translateY(-8px);background:rgba(245,240,234,.04);border-color:rgba(245,240,234,.32)}
+.plan.featured{background:var(--ivory);color:var(--ink);border-color:var(--ivory)}
+.plan.featured:hover{background:var(--ivory)}
+.plan .tag{font-size:.7rem;letter-spacing:.22em;text-transform:uppercase;font-weight:600;color:var(--rose)}
+.plan.featured .tag{color:var(--rose-deep)}
+.plan h3{font-size:2.3rem;margin:12px 0 8px}
+.plan .for{font-size:.92rem;opacity:.75;min-height:3.2em}
+.plan .price{font-family:var(--serif);font-size:1.3rem;font-style:italic;padding:18px 0;margin:10px 0 18px;border-block:1px solid var(--line-light)}
+.plan.featured .price{border-color:var(--line)}
+.plan ul{list-style:none;margin:0 0 28px;padding:0;display:grid;gap:11px;font-size:.92rem;flex:1}
+.plan li{display:flex;gap:12px}
+.plan li svg{flex:0 0 16px;width:16px;height:16px;margin-top:4px;color:var(--rose)}
+.plan li.strat{font-weight:600}
+.plan .btn{justify-content:center}
+.plan:not(.featured) .btn{border-color:rgba(245,240,234,.5);color:var(--ivory)}
+.plan:not(.featured) .btn:hover{background:var(--ivory);color:var(--ink)}
+
+.video-pack{margin-top:20px;display:grid;grid-template-columns:1.1fr 1fr;border-radius:var(--radius);overflow:hidden;background:#211A17;border:1px solid var(--line-light)}
+.video-pack figure{margin:0;position:relative;min-height:380px}
+.video-pack figure img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:saturate(.85) contrast(1.02)}
+.video-pack figure::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(33,26,23,0) 55%,rgba(33,26,23,.9))}
+.video-pack .vp-body{padding:clamp(32px,4vw,56px)}
+.video-pack h3{font-size:clamp(2rem,3.4vw,2.8rem);margin:12px 0 18px}
+.video-pack p{color:#CBBDB2}
+.vp-list{list-style:none;padding:0;margin:24px 0 32px;display:grid;grid-template-columns:1fr 1fr;gap:12px 20px;font-size:.92rem}
+.vp-list li{display:flex;gap:10px;align-items:baseline}
+.vp-list li::before{content:"✦";color:var(--rose);font-size:.7rem}
+.strategy-note{margin-top:56px;display:grid;grid-template-columns:auto 1fr;gap:26px;align-items:start;padding-top:40px;border-top:1px solid var(--line-light)}
+.strategy-note .n{font-family:var(--serif);font-style:italic;font-size:3.4rem;line-height:.9;color:var(--rose)}
+.strategy-note h3{font-size:1.8rem;margin-bottom:10px}
+.strategy-note ul{list-style:none;padding:0;margin:18px 0 0;display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.strategy-note li{font-size:.9rem;color:#CBBDB2;border-left:1px solid var(--line-light);padding-left:14px}
+.strategy-note li b{display:block;color:var(--ivory);font-weight:600;margin-bottom:4px}
+
+/* =========================================================
+   8. PROGETTI
+   ========================================================= */
+.case{display:grid;grid-template-columns:1fr 1fr;gap:clamp(30px,5vw,70px);align-items:center;margin-bottom:clamp(70px,9vw,120px)}
+.case-media{display:grid;grid-template-columns:1fr 1fr;gap:16px;align-items:start}
+.case-media button{border:0;padding:0;background:none;border-radius:16px;overflow:hidden;box-shadow:0 30px 60px -36px rgba(43,34,30,.5)}
+.case-media button:nth-child(2){margin-top:60px}
+.case-media img{width:100%;transition:transform 1s var(--ease)}
+.case-media button:hover img{transform:scale(1.04)}
+.case-info .meta{display:flex;flex-wrap:wrap;gap:8px;margin:22px 0}
+.chip{font-size:.76rem;border:1px solid var(--line);border-radius:999px;padding:6px 14px;background:var(--paper)}
+.case-info h3{font-size:clamp(2.2rem,4vw,3.2rem)}
+.case-info p{color:var(--muted)}
+.stats{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:30px}
+.stat{background:var(--paper);border:1px solid var(--line);border-radius:18px;padding:22px}
+.stat .v{font-family:var(--serif);font-size:clamp(2.2rem,4vw,3rem);line-height:1;font-weight:500}
+.stat .d{display:inline-block;margin:8px 0 6px;font-size:.8rem;font-weight:600;color:#3E7B4F}
+.stat .l{font-size:.82rem;color:var(--muted);line-height:1.45}
+.source{font-size:.74rem;color:var(--taupe);margin-top:14px}
+
+.gallery{columns:3 280px;column-gap:18px}
+.g-item{break-inside:avoid;margin:0 0 18px;position:relative;border-radius:18px;overflow:hidden;background:var(--sand);border:0;padding:0;display:block;width:100%;text-align:left}
+.g-item img{width:100%;transition:transform 1s var(--ease)}
+.g-item:hover img{transform:scale(1.04)}
+.g-item .cap{position:absolute;left:12px;right:12px;bottom:12px;background:rgba(251,248,244,.92);backdrop-filter:blur(8px);border-radius:12px;padding:10px 14px;font-size:.8rem;display:flex;justify-content:space-between;gap:10px;align-items:center;transform:translateY(8px);opacity:.92;transition:transform .5s var(--ease),opacity .5s}
+.g-item:hover .cap{transform:none;opacity:1}
+.g-item .cap b{font-weight:600}
+.g-item .cap i{font-style:normal;color:var(--muted)}
+
+.projects-list{list-style:none;margin:clamp(60px,8vw,100px) 0 0;padding:0;border-top:1px solid var(--line)}
+.projects-list li{display:grid;grid-template-columns:1.1fr 1.4fr auto;gap:24px;align-items:baseline;padding:26px 0;border-bottom:1px solid var(--line);transition:padding .5s var(--ease)}
+.projects-list li:hover{padding-left:14px}
+.projects-list h3{font-size:clamp(1.5rem,2.6vw,2.1rem)}
+.projects-list p{margin:0;color:var(--muted);font-size:.94rem}
+.projects-list span{font-size:.74rem;letter-spacing:.16em;text-transform:uppercase;color:var(--taupe);font-weight:600;white-space:nowrap}
+
+/* =========================================================
+   9. RECENSIONI
+   ========================================================= */
+.reviews{background:var(--paper);border-block:1px solid var(--line)}
+.review-grid{display:grid;grid-template-columns:1.15fr 1fr;gap:20px}
+.review-stack{display:grid;gap:20px}
+.review{background:var(--ivory);border:1px solid var(--line);border-radius:var(--radius);padding:clamp(28px,3.4vw,44px);display:flex;flex-direction:column;justify-content:space-between;gap:28px;transition:transform .6s var(--ease),box-shadow .6s}
+.review:hover{transform:translateY(-6px);box-shadow:0 30px 60px -40px rgba(43,34,30,.4)}
+.review .q{font-family:var(--serif);font-size:4.5rem;line-height:.5;color:var(--rose);height:28px}
+.review blockquote{margin:0;font-family:var(--serif);font-size:clamp(1.6rem,2.8vw,2.4rem);line-height:1.2;font-weight:500}
+.review.lg blockquote{font-size:clamp(2rem,3.8vw,3.2rem)}
+.review footer{display:flex;justify-content:space-between;align-items:flex-end;gap:16px;flex-wrap:wrap;border-top:1px solid var(--line);padding-top:20px}
+.who b{display:block;font-weight:600}
+.who small{color:var(--muted);font-size:.82rem}
+.proof{background:none;border:1px solid var(--line);border-radius:999px;padding:9px 16px;font-size:.8rem;display:inline-flex;gap:8px;align-items:center;transition:background .3s,color .3s}
+.proof:hover{background:var(--ink);color:var(--ivory)}
+.proof svg{width:14px;height:14px}
+.review.dark{background:var(--ink);color:var(--ivory);border-color:var(--ink)}
+.review.dark footer{border-color:var(--line-light)}
+.review.dark .who small{color:#CBBDB2}
+.review.dark .proof{border-color:var(--line-light)}
+.review.dark .proof:hover{background:var(--ivory);color:var(--ink)}
+.reviews-note{font-size:.78rem;color:var(--taupe);margin-top:26px;text-align:center}
+
+/* =========================================================
+   10. CONTATTI
+   ========================================================= */
+.cta-band{background:var(--ink);color:var(--ivory);overflow:hidden}
+.cta-band h2{font-size:clamp(3rem,8.5vw,8.2rem);line-height:.95;letter-spacing:-.03em}
+.cta-band h2 em{color:var(--rose)}
+.contact-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:clamp(40px,7vw,100px);margin-top:clamp(56px,8vw,96px)}
+.contact-list{list-style:none;padding:0;margin:0;border-top:1px solid var(--line-light)}
+.contact-list li{border-bottom:1px solid var(--line-light)}
+.contact-list a{display:flex;justify-content:space-between;align-items:center;gap:16px;padding:24px 0;transition:padding .5s var(--ease),color .3s}
+.contact-list a:hover{padding-left:12px;color:var(--rose)}
+.contact-list small{display:block;font-size:.72rem;letter-spacing:.2em;text-transform:uppercase;color:#A89A8F;margin-bottom:4px}
+.contact-list .val{font-family:var(--serif);font-size:clamp(1.35rem,2.4vw,1.9rem);word-break:break-all}
+.contact-list svg{flex:0 0 22px;width:22px;height:22px}
+.contact-side p{color:#CBBDB2;margin-top:28px;font-size:.92rem}
+
+.form{display:grid;grid-template-columns:1fr 1fr;gap:16px 18px}
+.field{display:flex;flex-direction:column;gap:8px}
+.field.full{grid-column:1/-1}
+.field label{font-size:.76rem;letter-spacing:.16em;text-transform:uppercase;color:#A89A8F;font-weight:600}
+.field input,.field select,.field textarea{font:inherit;color:var(--ivory);background:rgba(245,240,234,.04);border:1px solid var(--line-light);border-radius:14px;padding:15px 16px;transition:border-color .3s,background .3s;width:100%}
+.field select{appearance:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23CBBDB2' stroke-width='1.5'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 14px center;background-size:18px;padding-right:44px}
+.field select option{color:var(--ink)}
+.field textarea{min-height:140px;resize:vertical}
+.field input:focus,.field select:focus,.field textarea:focus{outline:none;border-color:var(--rose);background:rgba(245,240,234,.07)}
+.field input::placeholder,.field textarea::placeholder{color:#857870}
+.consent{grid-column:1/-1;display:flex;gap:12px;align-items:flex-start;font-size:.84rem;color:#CBBDB2}
+.consent input{margin-top:4px;accent-color:var(--rose);width:18px;height:18px;flex:0 0 18px}
+.form-actions{grid-column:1/-1;display:flex;align-items:center;gap:20px;flex-wrap:wrap}
+.form-status{font-size:.9rem;min-height:1.4em}
+.form-status.ok{color:#A9D3B4}.form-status.err{color:#F0B9A9}
+.form-status a{text-decoration:underline}
+.hp{position:absolute;left:-9999px}
+
+/* Footer */
+.footer{background:var(--ink);color:#CBBDB2;padding:70px 0 34px;border-top:1px solid var(--line-light)}
+.footer-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:40px}
+.footer .logo{color:var(--ivory)}
+.footer .logo span{color:#A89A8F}
+.footer h4{font-size:.72rem;letter-spacing:.22em;text-transform:uppercase;color:var(--ivory);margin:0 0 18px;font-weight:600}
+.footer ul{list-style:none;margin:0;padding:0;display:grid;gap:10px;font-size:.92rem}
+.footer a:hover{color:var(--ivory)}
+.footer-bottom{margin-top:56px;padding-top:24px;border-top:1px solid var(--line-light);display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;font-size:.8rem}
+
+/* WhatsApp floating */
+.wa-float{position:fixed;right:22px;bottom:22px;z-index:60;display:flex;align-items:center;gap:10px;background:#1F1A17;color:var(--ivory);border-radius:999px;padding:8px 8px 8px 18px;box-shadow:0 18px 40px -16px rgba(0,0,0,.5);font-size:.86rem;font-weight:500;transition:transform .4s var(--ease),background .3s}
+.wa-float:hover{transform:translateY(-4px)}
+.wa-float .ic{width:42px;height:42px;border-radius:50%;background:#25D366;display:grid;place-items:center;color:#fff}
+.wa-float .ic svg{width:22px;height:22px}
+
+/* Lightbox */
+.lightbox{position:fixed;inset:0;z-index:90;background:rgba(20,16,14,.92);display:none;align-items:center;justify-content:center;padding:60px 20px 30px}
+.lightbox.open{display:flex;animation:fade .4s var(--ease)}
+.lightbox figure{margin:0;max-width:min(920px,100%);max-height:100%;display:flex;flex-direction:column;align-items:center;gap:14px}
+.lightbox img{max-height:calc(100vh - 150px);width:auto;border-radius:12px;object-fit:contain}
+.lightbox figcaption{color:#CBBDB2;font-size:.88rem;text-align:center}
+.lb-close{position:absolute;top:18px;right:18px;width:48px;height:48px;border-radius:50%;border:1px solid rgba(255,255,255,.3);background:transparent;color:#fff;font-size:1.4rem}
+
+/* =========================================================
+   11. RESPONSIVE
+   ========================================================= */
+@media (max-width:1080px){
+  .nav ul{gap:20px}
+  .plans{grid-template-columns:1fr 1fr}
+  .plans .plan:last-child{grid-column:1/-1}
+  .strategy-note ul{grid-template-columns:1fr 1fr}
+}
+@media (max-width:900px){
+  .burger{display:block;z-index:2}
+  .nav{position:fixed;inset:0;background:var(--ivory);flex-direction:column;justify-content:center;gap:40px;opacity:0;visibility:hidden;transition:opacity .5s var(--ease),visibility .5s}
+  .nav ul{flex-direction:column;align-items:center;gap:18px}
+  .nav ul a{font-family:var(--serif);font-size:2.2rem}
+  .nav{height:100vh;height:100dvh}
+  .menu-open .header{backdrop-filter:none;-webkit-backdrop-filter:none;background:var(--ivory)}
+  .menu-open .nav{opacity:1;visibility:visible}
+  .header .logo{position:relative;z-index:2}
+  .menu-open .wa-float{display:none}
+  .menu-open{overflow:hidden}
+  .hero-grid,.about-grid,.case,.contact-grid,.video-pack,.review-grid,.section-head{grid-template-columns:1fr}
+  .hero{padding-top:120px}
+  .hero-visual{max-width:440px;margin:0 auto;width:86%}
+  .badge-round{left:-28px;bottom:40px;width:104px;height:104px}
+  .about-photo{position:relative;top:0;max-width:520px}
+  .steps{grid-template-columns:1fr 1fr}
+  .step:nth-child(3){border-left:0;padding-left:0}
+  .step{padding-bottom:30px}
+  .service-btn{grid-template-columns:52px 1fr auto}
+  .service-body{grid-template-columns:52px 1fr}
+  .service-body p,.service-body ul{grid-column:2}
+  .video-pack figure{min-height:280px}
+  .video-pack figure::after{background:linear-gradient(180deg,rgba(33,26,23,0) 55%,rgba(33,26,23,.9))}
+  .projects-list li{grid-template-columns:1fr;gap:6px}
+  .footer-grid{grid-template-columns:1fr 1fr}
+  .footer-grid>div:first-child{grid-column:1/-1}
+}
+@media (max-width:620px){
+  body{font-size:15.5px}
+  .plans{grid-template-columns:1fr}
+  .pillars,.stats,.vp-list,.form{grid-template-columns:1fr}
+  .steps{grid-template-columns:1fr}
+  .step{border-left:0;padding-left:0;border-top:1px solid var(--line)}
+  .step:first-child{border-top:0}
+  .strategy-note{grid-template-columns:1fr}
+  .strategy-note ul{grid-template-columns:1fr}
+  .no-contract{border-radius:20px;align-items:flex-start}
+  .case-media button:nth-child(2){margin-top:30px}
+  .hero-caption{right:-6px;top:20px}
+  .wa-float .lbl{display:none}
+  .wa-float{padding:7px}
+  .footer-grid{grid-template-columns:1fr}
+  .btn{padding:15px 22px}
+  .hero-ctas .btn{width:100%;justify-content:center}
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Vai al contenuto</a>
+
+<!-- ================= HEADER ================= -->
+<header class="header" id="header">
+  <div class="wrap">
+    <a href="#top" class="logo" aria-label="VIVI STUDIO, torna all'inizio">VIVI <span>STUDIO</span></a>
+    <nav class="nav" id="nav" aria-label="Navigazione principale">
+      <ul>
+        <li><a href="#studio">Studio</a></li>
+        <li><a href="#servizi">Servizi</a></li>
+        <li><a href="#pacchetti">Pacchetti</a></li>
+        <li><a href="#progetti">Progetti</a></li>
+        <li><a href="#recensioni">Recensioni</a></li>
+        <li><a href="#contatti">Contatti</a></li>
+      </ul>
+      <a href="#contatti" class="btn btn-dark">Parliamo del tuo progetto</a>
+    </nav>
+    <button class="burger" id="burger" aria-label="Apri il menu" aria-expanded="false" aria-controls="nav"><span></span><span></span></button>
+  </div>
+</header>
+
+<main id="main">
+
+<!-- ================= HERO ================= -->
+<section class="hero" id="top">
+  <div class="wrap hero-grid">
+    <div>
+      <span class="eyebrow">Comunicazione · Marketing · Strategia digitale</span>
+      <h1>
+        <span class="line"><span>Non basta esserci.</span></span>
+        <span class="line"><span>Bisogna sapersi</span></span>
+        <span class="line"><span><em>distinguere.</em></span></span>
+      </h1>
+      <p class="lead">Strategia, creatività e tecnologia per costruire brand riconoscibili e trasformare le idee in opportunità di crescita.</p>
+      <div class="hero-ctas">
+        <a href="#contatti" class="btn btn-dark">Parliamo del tuo progetto <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        <a href="#pacchetti" class="btn btn-ghost">Scopri i pacchetti</a>
+      </div>
+      <ul class="hero-meta">
+        <li>Pacchetti su misura</li>
+        <li>Nessun contratto vincolante</li>
+        <li>Videomaker nel team</li>
+      </ul>
+    </div>
+    <div class="hero-visual">
+      <div class="arch"><img src="assets/img/viviana-vitiello.jpg" alt="Viviana Vitiello, founder di VIVI STUDIO" width="900" height="1124" fetchpriority="high"></div>
+      <div class="hero-caption"><strong>Viviana Vitiello</strong>Founder · VIVI STUDIO</div>
+      <div class="badge-round" aria-hidden="true">
+        <svg viewBox="0 0 128 128"><defs><path id="circ" d="M64,64 m-50,0 a50,50 0 1,1 100,0 a50,50 0 1,1 -100,0"/></defs><text><textPath href="#circ">strategia · creatività · tecnologia · </textPath></text></svg>
+        <b>V</b>
+      </div>
+    </div>
+  </div>
+  <div class="scroll-cue" aria-hidden="true"></div>
+</section>
+
+<div class="marquee" aria-hidden="true">
+  <div class="marquee-track">
+    <span>Social Media Management</span><span>Digital Advertising</span><span>Brand Identity</span><span>Web Design</span><span>Video Production</span><span>AI &amp; Automazioni</span>
+    <span>Social Media Management</span><span>Digital Advertising</span><span>Brand Identity</span><span>Web Design</span><span>Video Production</span><span>AI &amp; Automazioni</span>
+  </div>
+</div>
+
+<!-- ================= CHI SIAMO ================= -->
+<section class="section" id="studio">
+  <div class="wrap about-grid">
+    <figure class="about-photo reveal">
+      <div class="frame"><img src="assets/img/viviana-vitiello.jpg" alt="Viviana Vitiello in ufficio" loading="lazy" width="900" height="1124"></div>
+      <figcaption><strong>Viviana Vitiello</strong><span>Founder &amp; Strategist</span></figcaption>
+    </figure>
+    <div class="about-text">
+      <span class="eyebrow reveal">Chi siamo</span>
+      <h2 class="reveal" data-delay="1">Uno studio, <em>una visione</em> integrata.</h2>
+      <p class="big reveal" data-delay="2">VIVI STUDIO è una boutique agency che unisce comunicazione, marketing, strategia aziendale e innovazione digitale in un unico percorso.</p>
+      <p class="reveal">Non partiamo da un pacchetto preconfezionato, ma da te. Ogni attività viene costruita sulla base dei tuoi obiettivi, del mercato in cui ti muovi e dell'identità che vuoi comunicare. Prima studiamo il business, i competitor e il pubblico; poi definiamo insieme la strada e la percorriamo al tuo fianco.</p>
+      <p class="reveal">Lavoriamo con professionisti e imprese che vogliono un'immagine coerente e riconoscibile — dal logo al tono di voce, dai contenuti alle campagne — con una comunicazione integrata sulle principali piattaforme.</p>
+
+      <div class="pillars reveal">
+        <div class="pillar"><small>01</small><h3>Comunicazione</h3><p>Messaggi chiari, coerenti e riconoscibili.</p></div>
+        <div class="pillar"><small>02</small><h3>Marketing</h3><p>Strategie e campagne orientate ai risultati.</p></div>
+        <div class="pillar"><small>03</small><h3>Strategia</h3><p>Decisioni basate su analisi di business e mercato.</p></div>
+        <div class="pillar"><small>04</small><h3>Innovazione</h3><p>Strumenti digitali e AI al servizio dei processi.</p></div>
+      </div>
+
+      <p class="reveal" style="margin-bottom:4px"><strong style="color:var(--ink)">Settori in cui abbiamo curato la comunicazione</strong></p>
+      <ul class="niches reveal">
+        <li>Politica</li><li>Fitness</li><li>Relazioni</li><li>Automotive</li><li>Info business</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ================= METODO ================= -->
+<section class="section method" aria-labelledby="metodo-title">
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        <span class="eyebrow reveal">Il metodo</span>
+        <h2 class="reveal" data-delay="1" id="metodo-title">Dall'analisi <em>ai risultati.</em></h2>
+      </div>
+      <p class="lead reveal" data-delay="2">Un processo chiaro, in quattro fasi, che trasforma gli obiettivi in decisioni e le decisioni in azioni misurabili.</p>
+    </div>
+    <ol class="steps">
+      <li class="step reveal"><span class="n">01</span><h3>Ascolto &amp; analisi</h3><p>Studio del tuo business, dei competitor e del mercato di riferimento.</p></li>
+      <li class="step reveal" data-delay="1"><span class="n">02</span><h3>Strategia</h3><p>Obiettivi, posizionamento, canali e priorità: le decisioni strategiche prese insieme.</p></li>
+      <li class="step reveal" data-delay="2"><span class="n">03</span><h3>Creazione</h3><p>Identità visiva, contenuti, video, campagne e sito web, realizzati con cura.</p></li>
+      <li class="step reveal" data-delay="3"><span class="n">04</span><h3>Misura &amp; ottimizza</h3><p>Analisi delle performance e aggiustamenti continui per crescere davvero.</p></li>
+    </ol>
+  </div>
+</section>
+
+<!-- ================= SERVIZI ================= -->
+<section class="section" id="servizi">
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        <span class="eyebrow reveal">Servizi</span>
+        <h2 class="reveal" data-delay="1">Cosa facciamo, <em>e come.</em></h2>
+      </div>
+      <p class="lead reveal" data-delay="2">Cinque aree di competenza che possono lavorare da sole o insieme, all'interno di un piano costruito sulle tue esigenze.</p>
+    </div>
+
+    <ul class="services">
+      <li class="service open reveal">
+        <button class="service-btn" aria-expanded="true" aria-controls="s1"><span class="num">01</span><h3>Social Media Management</h3><span class="plus" aria-hidden="true"></span></button>
+        <div class="service-panel" id="s1"><div><div class="service-body">
+          <p>Profili curati, contenuti coerenti e una community che cresce. Ci occupiamo di tutto, dalla strategia alla pubblicazione.</p>
+          <ul><li>Gestione dei profili social</li><li>Strategie editoriali</li><li>Creazione di contenuti</li><li>Copywriting</li><li>Community management</li><li>Analisi delle performance</li></ul>
+        </div></div></div>
+      </li>
+      <li class="service reveal">
+        <button class="service-btn" aria-expanded="false" aria-controls="s2"><span class="num">02</span><h3>Digital Marketing &amp; Advertising</h3><span class="plus" aria-hidden="true"></span></button>
+        <div class="service-panel" id="s2"><div><div class="service-body">
+          <p>Campagne pensate per raggiungere le persone giuste e trasformare l'attenzione in contatti e clienti.</p>
+          <ul><li>Strategie di marketing digitale</li><li>Campagne pubblicitarie</li><li>Meta Ads e Google Ads</li><li>Lead generation</li><li>Analisi e ottimizzazione dei risultati</li></ul>
+        </div></div></div>
+      </li>
+      <li class="service reveal">
+        <button class="service-btn" aria-expanded="false" aria-controls="s3"><span class="num">03</span><h3>Brand Identity &amp; Communication</h3><span class="plus" aria-hidden="true"></span></button>
+        <div class="service-panel" id="s3"><div><div class="service-body">
+          <p>Un'identità riconoscibile — immagine, palette, font e tono di voce — che racconta chi sei prima ancora che tu parli.</p>
+          <ul><li>Costruzione dell'identità del brand</li><li>Posizionamento</li><li>Tone of voice</li><li>Comunicazione aziendale</li><li>Strategia di branding</li></ul>
+        </div></div></div>
+      </li>
+      <li class="service reveal">
+        <button class="service-btn" aria-expanded="false" aria-controls="s4"><span class="num">04</span><h3>Web Design</h3><span class="plus" aria-hidden="true"></span></button>
+        <div class="service-panel" id="s4"><div><div class="service-body">
+          <p>Siti eleganti, veloci e pensati per convertire: il tuo biglietto da visita digitale, sempre aperto.</p>
+          <ul><li>Realizzazione di siti web</li><li>Landing page</li><li>Siti vetrina</li><li>Ottimizzazione dell'esperienza utente</li></ul>
+        </div></div></div>
+      </li>
+      <li class="service reveal">
+        <button class="service-btn" aria-expanded="false" aria-controls="s5"><span class="num">05</span><h3>AI &amp; Digital Innovation</h3><span class="plus" aria-hidden="true"></span></button>
+        <div class="service-panel" id="s5"><div><div class="service-body">
+          <p>Intelligenza artificiale e automazioni per liberare tempo, ridurre gli errori e lavorare in modo più efficiente.</p>
+          <ul><li>Automazioni</li><li>Integrazione di strumenti di intelligenza artificiale</li><li>Ottimizzazione dei processi aziendali</li><li>Soluzioni digitali personalizzate</li></ul>
+        </div></div></div>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<!-- ================= PACCHETTI ================= -->
+<section class="section packages" id="pacchetti">
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        <span class="eyebrow reveal">Pacchetti</span>
+        <h2 class="reveal" data-delay="1">Costruiti sulle <em>tue esigenze.</em></h2>
+      </div>
+      <p class="lead reveal" data-delay="2">Ogni pacchetto è un punto di partenza: dopo l'analisi iniziale lo adattiamo ai tuoi obiettivi, al tuo settore e al tuo budget.</p>
+    </div>
+
+    <div class="no-contract reveal">
+      <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg></span>
+      <span><strong>Nessun contratto vincolante.</strong> Lavoriamo insieme finché ti portiamo valore: puoi recedere in qualsiasi momento.</span>
+    </div>
+
+    <div class="plans">
+      <article class="plan reveal">
+        <span class="tag">Presenza</span>
+        <h3>Essential</h3>
+        <p class="for">Per chi vuole una presenza social curata, costante e coerente.</p>
+        <div class="price">Preventivo su misura</div>
+        <ul>
+          <li class="strat"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>Analisi iniziale e decisioni strategiche condivise</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>Gestione dei profili social</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>Piano editoriale</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>Creazione contenuti e copywriting</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>Report delle performance</li>
+        </ul>
+        <a href="#contatti" class="btn" data-pack="Pacchetto Essential">Richiedi il pacchetto</a>
+      </article>
+
+      <article class="plan featured reveal" data-delay="1">
+        <span class="tag">Crescita</span>
+        <h3>Growth</h3>
+        <p class="for">Per chi vuole crescere: contenuti e advertising che lavorano insieme.</p>
+        <div class="price">Preventivo su misura</div>
+        <ul>
+          <li class="strat"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>Piano strategico e affiancamento nelle decisioni di marketing</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>Tutto ciò che è incluso in Essential</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>Campagne Meta Ads e Google Ads</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>Lead generation</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>Community management</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>Analisi e ottimizzazione dei risultati</li>
+        </ul>
+        <a href="#contatti" class="btn btn-dark" data-pack="Pacchetto Growth">Richiedi il pacchetto</a>
+      </article>
+
+      <article class="plan reveal" data-delay="2">
+        <span class="tag">Identità completa</span>
+        <h3>Signature</h3>
+        <p class="for">Per chi parte da zero o vuole rinnovare la propria immagine.</p>
+        <div class="price">Preventivo su misura</div>
+        <ul>
+          <li class="strat"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>Strategia di brand e decisioni di posizionamento</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>Brand identity: immagine, palette, font</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>Tone of voice</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>Sito web o landing page</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>Comunicazione integrata sulle principali piattaforme</li>
+        </ul>
+        <a href="#contatti" class="btn" data-pack="Pacchetto Signature">Richiedi il pacchetto</a>
+      </article>
+    </div>
+
+    <!-- Pacchetto video -->
+    <article class="video-pack reveal">
+      <figure><img src="assets/img/videomaker-set.jpg" alt="Videomaker professionista al lavoro su un set con camera, monitor e ciak" loading="lazy" width="1290" height="701"></figure>
+      <div class="vp-body">
+        <span class="tag" style="font-size:.7rem;letter-spacing:.22em;text-transform:uppercase;font-weight:600;color:var(--rose)">Pacchetto Video</span>
+        <h3>Videomaker professionista. <em>Scriviamo tutto noi.</em></h3>
+        <p>Tu ci metti la presenza, al resto pensiamo noi: idea, script, testi e riprese con un videomaker professionista esperto in comunicazione. Contenuti video pronti per i tuoi canali, coerenti con la strategia del brand.</p>
+        <ul class="vp-list">
+          <li>Concept e idee creative</li>
+          <li>Script e copy scritti da noi</li>
+          <li>Riprese professionali</li>
+          <li>Montaggio e post-produzione</li>
+          <li>Formati per Reels e TikTok</li>
+          <li>Abbinabile a ogni pacchetto</li>
+        </ul>
+        <a href="#contatti" class="btn btn-light" data-pack="Pacchetto Video">Richiedi il pacchetto video <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      </div>
+    </article>
+
+    <!-- Decisioni strategiche nel piano -->
+    <div class="strategy-note reveal">
+      <span class="n">+</span>
+      <div>
+        <h3>In ogni piano, le decisioni strategiche.</h3>
+        <p style="color:#CBBDB2;max-width:62ch">Non ci limitiamo a eseguire: ti affianchiamo nelle scelte che contano, così ogni contenuto e ogni euro investito hanno un perché.</p>
+        <ul>
+          <li><b>Obiettivi</b>Cosa vogliamo ottenere e come lo misuriamo.</li>
+          <li><b>Posizionamento</b>Come distinguerti dai competitor.</li>
+          <li><b>Canali &amp; budget</b>Dove investire tempo e risorse.</li>
+          <li><b>Revisione periodica</b>Cosa funziona, cosa cambiare.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= PROGETTI ================= -->
+<section class="section" id="progetti">
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        <span class="eyebrow reveal">Progetti &amp; Portfolio</span>
+        <h2 class="reveal" data-delay="1">Lavori che <em>parlano da soli.</em></h2>
+      </div>
+      <p class="lead reveal" data-delay="2">Contenuti, grafiche, analisi e risultati reali, tratti dai progetti che seguiamo.</p>
+    </div>
+
+    <!-- Case in evidenza -->
+    <div class="case">
+      <div class="case-media reveal">
+        <button type="button" data-lightbox="assets/img/dicono-di-noi.jpg" data-caption="Grafica social “Dicono di noi” realizzata con i feedback ricevuti dalla cliente"><img src="assets/img/dicono-di-noi.jpg" alt="Grafica social Dicono di noi con screenshot dei messaggi della cliente" loading="lazy" width="900" height="1599"></button>
+        <button type="button" data-lightbox="assets/img/risultati-grafica.jpg" data-caption="Grafica social “Risultati”"><img src="assets/img/risultati-grafica.jpg" alt="Grafica social Risultati in palette rosa nude" loading="lazy" width="800" height="1421"></button>
+      </div>
+      <div class="case-info">
+        <span class="eyebrow reveal">Case study</span>
+        <h3 class="reveal" data-delay="1" style="margin-top:16px">Mary Trainer</h3>
+        <div class="meta reveal" data-delay="2"><span class="chip">Social media management</span><span class="chip">Contenuti &amp; grafiche</span><span class="chip">Evento Fit &amp; Chic</span></div>
+        <p class="reveal">Gestione della comunicazione social dello studio e cura dell'evento open day “Fit &amp; Chic”, realizzato in collaborazione con Scintilla: locandine, contenuti, storie e comunicazione con le clienti.</p>
+        <div class="stats reveal">
+          <div class="stat">
+            <div class="v" data-count="34190">34.190</div>
+            <span class="d">+50,9% rispetto all'8 ott</span>
+            <div class="l">Visualizzazioni da non follower</div>
+          </div>
+          <div class="stat">
+            <div class="v" style="font-style:italic;font-size:clamp(1.6rem,2.6vw,2.1rem)">“Lavoro eccellente”</div>
+            <span class="d" style="color:var(--rose-deep)">Feedback della cliente</span>
+            <div class="l">In risposta al report dei risultati</div>
+          </div>
+        </div>
+        <p class="source reveal">Dati dagli insight Instagram. <button type="button" class="link-line" style="background:none;border:0;padding:0;font-size:inherit;color:inherit" data-lightbox="assets/img/team-mary-risultati.jpg" data-caption="Insight condiviso con il Team Mary Trainer">Vedi lo screenshot originale</button></p>
+      </div>
+    </div>
+
+    <!-- Galleria -->
+    <div class="gallery">
+      <button type="button" class="g-item reveal" data-lightbox="assets/img/insight-visualizzazioni.jpg" data-caption="Insight: visualizzazioni e follower, 9 ott – 7 nov">
+        <img src="assets/img/insight-visualizzazioni.jpg" alt="Insight Instagram: 17.918 visualizzazioni, +101,5%; 1.243 follower" loading="lazy" width="1000" height="543">
+        <span class="cap"><b>Analisi delle performance</b><i>Insight</i></span>
+      </button>
+      <button type="button" class="g-item reveal" data-delay="1" data-lightbox="assets/img/dicono-di-noi.jpg" data-caption="Grafica social “Dicono di noi”">
+        <img src="assets/img/dicono-di-noi.jpg" alt="Grafica social Dicono di noi" loading="lazy" width="900" height="1599">
+        <span class="cap"><b>Contenuto social</b><i>Grafica</i></span>
+      </button>
+      <button type="button" class="g-item reveal" data-delay="2" data-lightbox="assets/img/analisi-pubblico.jpg" data-caption="Dashboard del pubblico: paesi e lingue principali">
+        <img src="assets/img/analisi-pubblico.jpg" alt="Dashboard del pubblico con paesi e lingue principali" loading="lazy" width="700" height="1430">
+        <span class="cap"><b>Analisi del pubblico</b><i>Dashboard</i></span>
+      </button>
+      <button type="button" class="g-item reveal" data-lightbox="assets/img/insight-non-follower.jpg" data-caption="Visualizzazioni da non follower: 34.190, +50,9%">
+        <img src="assets/img/insight-non-follower.jpg" alt="34.190 visualizzazioni da non follower, +50,9% rispetto all'8 ottobre" loading="lazy" width="621" height="493">
+        <span class="cap"><b>Crescita della reach</b><i>Insight</i></span>
+      </button>
+      <button type="button" class="g-item reveal" data-delay="1" data-lightbox="assets/img/risultati-grafica.jpg" data-caption="Grafica social “Risultati”">
+        <img src="assets/img/risultati-grafica.jpg" alt="Grafica social Risultati" loading="lazy" width="800" height="1421">
+        <span class="cap"><b>Contenuto social</b><i>Grafica</i></span>
+      </button>
+      <button type="button" class="g-item reveal" data-delay="2" data-lightbox="assets/img/videomaker-set.jpg" data-caption="Produzione video con videomaker professionista">
+        <img src="assets/img/videomaker-set.jpg" alt="Set di produzione video" loading="lazy" width="1290" height="701">
+        <span class="cap"><b>Produzione video</b><i>Set</i></span>
+      </button>
+    </div>
+
+    <!-- Altri progetti -->
+    <ul class="projects-list">
+      <li class="reveal"><h3>Vivi la Politica</h3><p>Format editoriale su Instagram e TikTok: ideazione, contenuti e conduzione.</p><span>Social · Contenuti</span></li>
+      <li class="reveal"><h3>Mazia Enterprises</h3><p>Gestione del profilo Instagram, creazione dei contenuti e pubblicazione quotidiana.</p><span>Social · Grafiche</span></li>
+      <li class="reveal"><h3>Torna al Centro</h3><p>E-commerce di prodotti digitali: comunicazione social e funnel di vendita.</p><span>E-commerce · Funnel</span></li>
+    </ul>
+  </div>
+</section>
+
+<!-- ================= RECENSIONI ================= -->
+<section class="section reviews" id="recensioni">
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        <span class="eyebrow reveal">Recensioni</span>
+        <h2 class="reveal" data-delay="1">Dicono <em>di noi.</em></h2>
+      </div>
+      <p class="lead reveal" data-delay="2">Le vostre parole, la nostra più grande soddisfazione. Messaggi reali, riportati senza modifiche.</p>
+    </div>
+
+    <div class="review-grid">
+      <article class="review lg reveal">
+        <span class="q" aria-hidden="true">“</span>
+        <blockquote>Sono molto contenta del lavoro che stia facendo per me 💪</blockquote>
+        <footer>
+          <div class="who"><b>Mary Trainer</b><small>Social media management · messaggio WhatsApp, 21 ottobre</small></div>
+          <button type="button" class="proof" data-lightbox="assets/img/recensione-mary-whatsapp.jpg" data-caption="Messaggio originale di Mary Trainer (WhatsApp)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="m3 16 5-5 4 4 3-3 6 6"/></svg>Screenshot originale</button>
+        </footer>
+      </article>
+      <div class="review-stack">
+        <article class="review dark reveal" data-delay="1">
+          <span class="q" aria-hidden="true">“</span>
+          <blockquote>Lavoro eccellente 😍</blockquote>
+          <footer>
+            <div class="who"><b>Mary Trainer</b><small>In risposta al report dei risultati · WhatsApp</small></div>
+            <button type="button" class="proof" data-lightbox="assets/img/recensione-mary-lavoro-eccellente.jpg" data-caption="Messaggio originale nel gruppo Team Mary Trainer (WhatsApp)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="m3 16 5-5 4 4 3-3 6 6"/></svg>Screenshot originale</button>
+          </footer>
+        </article>
+        <article class="review reveal" data-delay="2">
+          <span class="q" aria-hidden="true">“</span>
+          <blockquote>Ma a cosa è dovuto questo salto qualità nei social!!!!!</blockquote>
+          <footer>
+            <div class="who"><b>ARU Eyewear</b><small>Messaggio ricevuto su Instagram</small></div>
+            <button type="button" class="proof" data-lightbox="assets/img/recensione-aru-instagram.jpg" data-caption="Messaggio originale di ARU Eyewear (Instagram)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="m3 16 5-5 4 4 3-3 6 6"/></svg>Screenshot originale</button>
+          </footer>
+        </article>
+      </div>
+    </div>
+    <p class="reviews-note">Testi trascritti fedelmente dai messaggi originali, consultabili tramite gli screenshot.</p>
+  </div>
+</section>
+
+<!-- ================= CONTATTI ================= -->
+<section class="section cta-band" id="contatti">
+  <div class="wrap">
+    <span class="eyebrow reveal" style="color:#A89A8F">Contatti</span>
+    <h2 class="reveal" data-delay="1" style="margin-top:22px">Il tuo prossimo progetto <em>inizia da qui.</em></h2>
+
+    <div class="contact-grid">
+      <div class="contact-side reveal">
+        <ul class="contact-list">
+          <li><a href="mailto:vitielloviviana1@gmail.com?subject=Richiesta%20informazioni%20-%20VIVI%20STUDIO"><span><small>Email</small><span class="val">vitielloviviana1@gmail.com</span></span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></a></li>
+          <li><a href="tel:+393928130323"><span><small>Telefono</small><span class="val">+39 392 813 0323</span></span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></a></li>
+          <li><a href="https://wa.me/393928130323?text=Ciao%20VIVI%20STUDIO%2C%20vorrei%20parlarvi%20del%20mio%20progetto." target="_blank" rel="noopener"><span><small>WhatsApp</small><span class="val">Scrivici su WhatsApp</span></span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></a></li>
+        </ul>
+        <p>Rispondiamo personalmente a ogni richiesta. Il primo confronto serve a capire i tuoi obiettivi e a proporti il percorso più adatto: nessun impegno, nessun contratto vincolante.</p>
+      </div>
+
+      <form class="form reveal" id="contact-form" novalidate data-delay="1">
+        <!-- Configurazione invio: vedi LEGGIMI.txt -->
+        <input type="text" name="_honey" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+        <div class="field"><label for="f-name">Nome e cognome *</label><input id="f-name" name="nome" type="text" autocomplete="name" required placeholder="Il tuo nome"></div>
+        <div class="field"><label for="f-email">Email *</label><input id="f-email" name="email" type="email" autocomplete="email" required placeholder="nome@email.it"></div>
+        <div class="field"><label for="f-phone">Telefono</label><input id="f-phone" name="telefono" type="tel" autocomplete="tel" placeholder="+39 ..."></div>
+        <div class="field"><label for="f-service">Ti interessa</label>
+          <select id="f-service" name="interesse">
+            <option value="">Seleziona un'opzione</option>
+            <optgroup label="Pacchetti">
+              <option>Pacchetto Essential</option><option>Pacchetto Growth</option><option>Pacchetto Signature</option><option>Pacchetto Video</option>
+            </optgroup>
+            <optgroup label="Servizi">
+              <option>Social Media Management</option><option>Digital Marketing &amp; Advertising</option><option>Brand Identity &amp; Communication</option><option>Web Design</option><option>AI &amp; Digital Innovation</option>
+            </optgroup>
+            <option>Altro / non so ancora</option>
+          </select>
+        </div>
+        <div class="field full"><label for="f-msg">Raccontaci il tuo progetto *</label><textarea id="f-msg" name="messaggio" required placeholder="Di cosa ti occupi, quali obiettivi hai, cosa vorresti migliorare…"></textarea></div>
+        <label class="consent"><input type="checkbox" name="privacy" required> Acconsento al trattamento dei dati personali per essere ricontattato/a in merito alla mia richiesta.</label>
+        <div class="form-actions">
+          <button type="submit" class="btn btn-light">Invia la richiesta <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+          <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ================= FOOTER ================= -->
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <a href="#top" class="logo">VIVI <span>STUDIO</span></a>
+        <p style="margin-top:18px;max-width:36ch">Studio di comunicazione, marketing e strategia digitale. Strategia, creatività e tecnologia per brand che vogliono distinguersi.</p>
+      </div>
+      <div>
+        <h4>Navigazione</h4>
+        <ul><li><a href="#studio">Studio</a></li><li><a href="#servizi">Servizi</a></li><li><a href="#pacchetti">Pacchetti</a></li><li><a href="#progetti">Progetti</a></li><li><a href="#recensioni">Recensioni</a></li><li><a href="#contatti">Contatti</a></li></ul>
+      </div>
+      <div>
+        <h4>Contatti</h4>
+        <ul>
+          <li><a href="mailto:vitielloviviana1@gmail.com">vitielloviviana1@gmail.com</a></li>
+          <li><a href="tel:+393928130323">+39 392 813 0323</a></li>
+          <li><a href="https://wa.me/393928130323" target="_blank" rel="noopener">WhatsApp</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom"><span>© <span id="year">2026</span> VIVI STUDIO. Tutti i diritti riservati.</span><a href="#top">Torna su ↑</a></div>
+  </div>
+</footer>
+
+<!-- WhatsApp floating -->
+<a class="wa-float" href="https://wa.me/393928130323?text=Ciao%20VIVI%20STUDIO%2C%20vorrei%20informazioni." target="_blank" rel="noopener" aria-label="Scrivici su WhatsApp">
+  <span class="lbl">Scrivici</span>
+  <span class="ic"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.48-.89-.79-1.49-1.77-1.66-2.07-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.8.37-.27.3-1.04 1.02-1.04 2.49s1.07 2.89 1.22 3.09c.15.2 2.1 3.2 5.08 4.49.71.31 1.26.49 1.69.63.71.23 1.36.2 1.87.12.57-.09 1.76-.72 2.01-1.41.25-.7.25-1.29.17-1.41-.07-.13-.27-.2-.57-.35M12.05 21.5h-.01a9.4 9.4 0 0 1-4.8-1.31l-.34-.2-3.56.93.95-3.47-.22-.36a9.4 9.4 0 0 1-1.44-5.02c0-5.2 4.23-9.43 9.43-9.43 2.52 0 4.89.98 6.67 2.77a9.37 9.37 0 0 1 2.76 6.67c0 5.2-4.23 9.43-9.44 9.43m8.03-17.46A11.3 11.3 0 0 0 12.05.71C5.79.71.7 5.8.7 12.06c0 2 .52 3.95 1.52 5.67L.6 23.6l6.01-1.58a11.3 11.3 0 0 0 5.43 1.38h.01c6.26 0 11.35-5.09 11.35-11.35 0-3.03-1.18-5.88-3.32-8.02"/></svg></span>
+</a>
+
+<!-- Lightbox -->
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Anteprima immagine">
+  <button class="lb-close" id="lb-close" aria-label="Chiudi anteprima">×</button>
+  <figure><img id="lb-img" src="" alt=""><figcaption id="lb-cap"></figcaption></figure>
+</div>
+
+<script>
+/* =========================================================
+   CONFIGURAZIONE
+   Il form invia le richieste tramite FormSubmit (gratuito, senza backend).
+   Al primo invio arriverà a questo indirizzo un'email di attivazione:
+   basta cliccare il link di conferma una volta.
+   ========================================================= */
+const CONFIG = {
+  email: 'vitielloviviana1@gmail.com',
+  formEndpoint: 'https://formsubmit.co/ajax/vitielloviviana1@gmail.com'
+};
+
+(function(){
+  const $ = (s, c = document) => c.querySelector(s);
+  const $$ = (s, c = document) => Array.from(c.querySelectorAll(s));
+  const body = document.body;
+
+  /* Header on scroll */
+  const header = $('#header');
+  const onScroll = () => header.classList.toggle('scrolled', window.scrollY > 30);
+  onScroll(); window.addEventListener('scroll', onScroll, {passive:true});
+
+  /* Mobile menu */
+  const burger = $('#burger');
+  const closeMenu = () => { body.classList.remove('menu-open'); burger.setAttribute('aria-expanded','false'); burger.setAttribute('aria-label','Apri il menu'); };
+  burger.addEventListener('click', () => {
+    const open = body.classList.toggle('menu-open');
+    burger.setAttribute('aria-expanded', open);
+    burger.setAttribute('aria-label', open ? 'Chiudi il menu' : 'Apri il menu');
+  });
+  $$('#nav a').forEach(a => a.addEventListener('click', closeMenu));
+
+  /* Smooth anchor scroll (works also inside embedded frames) */
+  $$('a[href^="#"]').forEach(a => a.addEventListener('click', e => {
+    const id = a.getAttribute('href');
+    if (id.length < 2) return;
+    const el = document.querySelector(id);
+    if (!el) return;
+    e.preventDefault();
+    const top = el.getBoundingClientRect().top + window.scrollY - 60;
+    window.scrollTo({top, behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth'});
+  }));
+
+  /* Active nav link */
+  const navLinks = $$('.nav ul a');
+  const sections = navLinks.map(a => document.querySelector(a.getAttribute('href'))).filter(Boolean);
+  if ('IntersectionObserver' in window) {
+    const so = new IntersectionObserver(entries => {
+      entries.forEach(en => { if (en.isIntersecting) navLinks.forEach(l => l.classList.toggle('active', l.getAttribute('href') === '#' + en.target.id)); });
+    }, {rootMargin:'-45% 0px -50% 0px'});
+    sections.forEach(s => so.observe(s));
+  }
+
+  /* Reveal on scroll */
+  const reveals = $$('.reveal');
+  if ('IntersectionObserver' in window) {
+    const ro = new IntersectionObserver(entries => {
+      entries.forEach(en => { if (en.isIntersecting) { en.target.classList.add('in'); ro.unobserve(en.target); } });
+    }, {threshold:.12, rootMargin:'0px 0px -40px 0px'});
+    reveals.forEach(r => ro.observe(r));
+  } else reveals.forEach(r => r.classList.add('in'));
+
+  /* Count-up numbers */
+  const fmt = n => n.toLocaleString('it-IT');
+  const counters = $$('[data-count]');
+  if ('IntersectionObserver' in window && !matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    const co = new IntersectionObserver(entries => {
+      entries.forEach(en => {
+        if (!en.isIntersecting) return;
+        const el = en.target, end = +el.dataset.count, t0 = performance.now(), d = 1600;
+        const tick = t => { const p = Math.min((t - t0) / d, 1); el.textContent = fmt(Math.round(end * (1 - Math.pow(1 - p, 3)))); if (p < 1) requestAnimationFrame(tick); };
+        requestAnimationFrame(tick); co.unobserve(el);
+      });
+    }, {threshold:.6});
+    counters.forEach(c => co.observe(c));
+  }
+
+  /* Services accordion */
+  $$('.service-btn').forEach(btn => btn.addEventListener('click', () => {
+    const item = btn.closest('.service');
+    const open = !item.classList.contains('open');
+    $$('.service').forEach(s => { s.classList.remove('open'); $('.service-btn', s).setAttribute('aria-expanded','false'); });
+    if (open) { item.classList.add('open'); btn.setAttribute('aria-expanded','true'); }
+  }));
+
+  /* Package buttons preselect the form */
+  const select = $('#f-service');
+  $$('[data-pack]').forEach(b => b.addEventListener('click', () => { select.value = b.dataset.pack; }));
+
+  /* Lightbox */
+  const lb = $('#lightbox'), lbImg = $('#lb-img'), lbCap = $('#lb-cap');
+  let lastFocus = null;
+  const openLb = (src, cap) => { lastFocus = document.activeElement; lbImg.src = src; lbImg.alt = cap || ''; lbCap.textContent = cap || ''; lb.classList.add('open'); body.style.overflow = 'hidden'; $('#lb-close').focus(); };
+  const closeLb = () => { lb.classList.remove('open'); body.style.overflow = ''; if (lastFocus) lastFocus.focus(); };
+  $$('[data-lightbox]').forEach(el => el.addEventListener('click', () => openLb(el.dataset.lightbox, el.dataset.caption)));
+  $('#lb-close').addEventListener('click', closeLb);
+  lb.addEventListener('click', e => { if (e.target === lb) closeLb(); });
+  document.addEventListener('keydown', e => { if (e.key === 'Escape') { if (lb.classList.contains('open')) closeLb(); if (body.classList.contains('menu-open')) closeMenu(); } });
+
+  /* Contact form */
+  const form = $('#contact-form'), status = $('#form-status');
+  const setStatus = (html, cls) => { status.className = 'form-status ' + (cls || ''); status.innerHTML = html; };
+  form.addEventListener('submit', async e => {
+    e.preventDefault();
+    if (form._honey.value) return; // spam bot
+    const data = Object.fromEntries(new FormData(form));
+    if (!data.nome.trim() || !data.messaggio.trim()) return setStatus('Compila nome e messaggio.', 'err');
+    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(data.email)) return setStatus('Inserisci un indirizzo email valido.', 'err');
+    if (!form.privacy.checked) return setStatus('Per inviare la richiesta serve il consenso al trattamento dei dati.', 'err');
+
+    const btn = $('button[type="submit"]', form);
+    btn.disabled = true; setStatus('Invio in corso…');
+    const payload = {
+      nome: data.nome, email: data.email, telefono: data.telefono || '-', interesse: data.interesse || '-', messaggio: data.messaggio,
+      _subject: 'Nuova richiesta dal sito VIVI STUDIO — ' + data.nome,
+      _replyto: data.email, _template: 'table', _captcha: 'false'
+    };
+    try {
+      const res = await fetch(CONFIG.formEndpoint, { method:'POST', headers:{'Content-Type':'application/json','Accept':'application/json'}, body: JSON.stringify(payload) });
+      const json = await res.json().catch(() => ({}));
+      if (!res.ok || json.success === 'false' || json.success === false) throw new Error(json.message || 'send failed');
+      form.reset();
+      setStatus('Grazie! La tua richiesta è stata inviata: ti risponderemo al più presto.', 'ok');
+    } catch (err) {
+      /* Fallback: prepara un'email già compilata */
+      const bodyTxt = `Nome: ${data.nome}\nEmail: ${data.email}\nTelefono: ${data.telefono || '-'}\nInteresse: ${data.interesse || '-'}\n\n${data.messaggio}`;
+      const href = `mailto:${CONFIG.email}?subject=${encodeURIComponent('Richiesta dal sito VIVI STUDIO')}&body=${encodeURIComponent(bodyTxt)}`;
+      setStatus(`Non è stato possibile inviare il modulo automaticamente. <a href="${href}">Apri la tua email</a> per inviarlo, oppure scrivi a ${CONFIG.email}.`, 'err');
+    } finally { btn.disabled = false; }
+  });
+
+  $('#year').textContent = new Date().getFullYear();
+})();
+</script>
+</body>
+</html>
